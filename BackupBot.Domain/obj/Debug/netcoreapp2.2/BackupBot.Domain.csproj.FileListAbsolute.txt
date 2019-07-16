@@ -1,0 +1,14 @@
+C:\Users\julia\Source\Repos\BackupBot\BackupBot.Domain\bin\Debug\netcoreapp2.2\BackupBot.Domain.deps.json
+C:\Users\julia\Source\Repos\BackupBot\BackupBot.Domain\bin\Debug\netcoreapp2.2\BackupBot.Domain.runtimeconfig.json
+C:\Users\julia\Source\Repos\BackupBot\BackupBot.Domain\bin\Debug\netcoreapp2.2\BackupBot.Domain.runtimeconfig.dev.json
+C:\Users\julia\Source\Repos\BackupBot\BackupBot.Domain\bin\Debug\netcoreapp2.2\BackupBot.Domain.dll
+C:\Users\julia\Source\Repos\BackupBot\BackupBot.Domain\obj\Debug\netcoreapp2.2\BackupBot.Domain.csproj.CoreCompileInputs.cache
+C:\Users\julia\Source\Repos\BackupBot\BackupBot.Domain\obj\Debug\netcoreapp2.2\BackupBot.Domain.AssemblyInfoInputs.cache
+C:\Users\julia\Source\Repos\BackupBot\BackupBot.Domain\obj\Debug\netcoreapp2.2\BackupBot.Domain.AssemblyInfo.cs
+C:\Users\julia\Source\Repos\BackupBot\BackupBot.Domain\obj\Debug\netcoreapp2.2\BackupBot.Domain.csprojAssemblyReference.cache
+C:\Users\julia\Source\Repos\BackupBot\BackupBot.Domain\bin\Debug\netcoreapp2.2\BackupBot.Domain.pdb
+C:\Users\julia\Source\Repos\BackupBot\BackupBot.Domain\bin\Debug\netcoreapp2.2\BackupBot.Data.dll
+C:\Users\julia\Source\Repos\BackupBot\BackupBot.Domain\bin\Debug\netcoreapp2.2\BackupBot.Data.pdb
+C:\Users\julia\Source\Repos\BackupBot\BackupBot.Domain\obj\Debug\netcoreapp2.2\BackupBot.Domain.csproj.CopyComplete
+C:\Users\julia\Source\Repos\BackupBot\BackupBot.Domain\obj\Debug\netcoreapp2.2\BackupBot.Domain.dll
+C:\Users\julia\Source\Repos\BackupBot\BackupBot.Domain\obj\Debug\netcoreapp2.2\BackupBot.Domain.pdb
