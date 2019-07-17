@@ -2,7 +2,7 @@
 using Discord.Commands;
 using System.Threading.Tasks;
 
-namespace BackupBot.Domain.Modules
+namespace BackupBot.Core.Modules
 {
     // Not sure about this name but what I mean to indicate is that this module can only affect the entity User
     public class UserCommands : ModuleBase<SocketCommandContext>

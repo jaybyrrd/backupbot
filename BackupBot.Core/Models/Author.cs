@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace BackupBot.Domain.Models
+namespace BackupBot.Core.Models
 {
     [Serializable]
     public readonly struct Author

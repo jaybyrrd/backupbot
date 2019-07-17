@@ -6,12 +6,13 @@ using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading.Tasks;
+using BackupBot.Domain.Backup;
 using BackupBot.Domain.Models;
 using Discord;
 using Discord.WebSocket;
 using Newtonsoft.Json;
 
-namespace BackupBot.Domain.Backup
+namespace BackupBot.Core.Backup
 {
     public class BackupHandler : IBackupHandler
     {

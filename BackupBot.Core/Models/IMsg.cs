@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Discord.WebSocket;
 
-namespace BackupBot.Domain.Models
+namespace BackupBot.Core.Models
 {
     public interface IMsg
     {

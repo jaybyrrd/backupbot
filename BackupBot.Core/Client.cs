@@ -1,5 +1,4 @@
-﻿using BackupBot.Domain.Backup;
-using Discord;
+﻿using Discord;
 using Discord.Commands;
 using Discord.WebSocket;
 using Microsoft.Extensions.DependencyInjection;
@@ -7,8 +6,9 @@ using System;
 using System.IO;
 using System.Reflection;
 using System.Threading.Tasks;
+using BackupBot.Core.Backup;
 
-namespace BackupBot
+namespace BackupBot.Core
 {
     public class Client
     {
