@@ -1,4 +1,4 @@
-﻿namespace BackupBot.Repositories
+﻿namespace BackupBot.Core.Repositories
 {
     public interface IUserRepository
     {

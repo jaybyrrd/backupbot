@@ -1,4 +1,4 @@
-﻿using BackupBot.Repositories;
+﻿using BackupBot.Core.Repositories;
 
 namespace BackupBot.Repository.EntityFramework
 {

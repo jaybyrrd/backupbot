@@ -8,7 +8,7 @@ using System.IO;
 using System.Reflection;
 using System.Threading.Tasks;
 
-namespace BackupBot
+namespace BackupBot.Core
 {
     public class Client
     {

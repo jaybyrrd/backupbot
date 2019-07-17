@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace BackupBot
+namespace BackupBot.Core
 {
     public class Enums
     {
