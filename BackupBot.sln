@@ -5,11 +5,13 @@ VisualStudioVersion = 16.0.29025.244
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BackupBot.Test", "BackupBot.Test\BackupBot.Test.csproj", "{8012E736-4288-4CB0-8908-E2FA524D02F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Discord.Bots", "Discord.Bots\Discord.Bots.csproj", "{37A7DD54-450F-4FCA-BF06-01D0DC34A9CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BackupBot.Core", "BackupBot.Core\BackupBot.Core.csproj", "{C10EFDA8-F13A-4014-8485-502DF68BAF39}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackupBot.Core", "BackupBot.Core\BackupBot.Core.csproj", "{C10EFDA8-F13A-4014-8485-502DF68BAF39}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BackupBot.Repository.EntityFramework", "BackupBot.Repository.EntityFramework\BackupBot.Repository.EntityFramework.csproj", "{655BC498-F5FB-44C4-86EB-F40A2830D4AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackupBot.Repository.EntityFramework", "BackupBot.Repository.EntityFramework\BackupBot.Repository.EntityFramework.csproj", "{655BC498-F5FB-44C4-86EB-F40A2830D4AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BackupBot.Repositories.Discord", "BackupBot.Repositories.Discord\BackupBot.Repositories.Discord.csproj", "{F00F81EB-BE60-40D5-BDEA-821D135C6EB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscordBot.ConsoleApplication", "DiscordBot.ConsoleApplication\DiscordBot.ConsoleApplication.csproj", "{5D087ADB-9C0B-4C72-9505-F02142A9EA5D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,10 +23,6 @@ Global
 		{8012E736-4288-4CB0-8908-E2FA524D02F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8012E736-4288-4CB0-8908-E2FA524D02F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8012E736-4288-4CB0-8908-E2FA524D02F2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{37A7DD54-450F-4FCA-BF06-01D0DC34A9CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{37A7DD54-450F-4FCA-BF06-01D0DC34A9CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{37A7DD54-450F-4FCA-BF06-01D0DC34A9CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{37A7DD54-450F-4FCA-BF06-01D0DC34A9CE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C10EFDA8-F13A-4014-8485-502DF68BAF39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C10EFDA8-F13A-4014-8485-502DF68BAF39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C10EFDA8-F13A-4014-8485-502DF68BAF39}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +31,14 @@ Global
 		{655BC498-F5FB-44C4-86EB-F40A2830D4AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{655BC498-F5FB-44C4-86EB-F40A2830D4AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{655BC498-F5FB-44C4-86EB-F40A2830D4AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F00F81EB-BE60-40D5-BDEA-821D135C6EB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F00F81EB-BE60-40D5-BDEA-821D135C6EB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F00F81EB-BE60-40D5-BDEA-821D135C6EB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F00F81EB-BE60-40D5-BDEA-821D135C6EB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D087ADB-9C0B-4C72-9505-F02142A9EA5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D087ADB-9C0B-4C72-9505-F02142A9EA5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D087ADB-9C0B-4C72-9505-F02142A9EA5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D087ADB-9C0B-4C72-9505-F02142A9EA5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
