@@ -20,9 +20,9 @@ namespace BackupBot.Core.Backup
 
         private readonly DirectoryInfo _backupDir;
 
-        public BackupHandler()
+        public BackupHandler(DirectoryInfo dir)
         {
-            _backupDir = new DirectoryInfo("D:\\backup\\");
+            _backupDir = dir;
         }
 
         public async Task AddMessageAsync(SocketMessage msg)
@@ -30,16 +30,20 @@ namespace BackupBot.Core.Backup
             string channelName = msg.Channel.Name;
             string path = _backupDir + channelName;
 
-            if (!File.Exists(path))
+            bool isBackupNeeded = !File.Exists(path);
+
+            // This creates the file if it does not exist, so we have to check before that
+            InitializeStream(channelName, path);
+
+            if (isBackupNeeded)
             {
-                InitializeStream(channelName, path);
                 await BackupCachedMessagesAsync(msg);
             }
             else
             {
-                InitializeStream(channelName, path);
                 await Task.Run(() => WriteMsgToFile(new Message(msg)));
             }
+
         }
 
         private void InitializeStream(string channel, string path)
