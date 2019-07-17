@@ -1,15 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.Serialization;
-using System.Runtime.Serialization.Formatters.Binary;
-using System.Text;
-using System.Threading.Tasks;
-using BackupBot.Domain.Models;
-using Discord;
-using Discord.WebSocket;
-using Newtonsoft.Json;
+﻿using BackupBot.Domain.Models;
 
 namespace BackupBot.Domain.Backup
 {
@@ -63,7 +52,7 @@ namespace BackupBot.Domain.Backup
         }
 
 
-        private void WriteMsgToFile(IMsg obj)
+        private void WriteMsgToFile(Message obj)
         {
             _formatter.Serialize(_stream, obj);
         }

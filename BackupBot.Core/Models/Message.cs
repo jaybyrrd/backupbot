@@ -1,17 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Net;
-using System.Text;
-using Discord;
+﻿using Discord;
 using Discord.WebSocket;
+using System;
+using System.Collections.Generic;
 
 namespace BackupBot.Domain.Models
 {
-    [Serializable]
-    public class Message : IMsg
+    public class Message
     {
         public string ChannelName { get; }
-        
+
         public Author MsgAuthor { get; }
 
         public string Content { get; }
