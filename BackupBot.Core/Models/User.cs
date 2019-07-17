@@ -1,4 +1,4 @@
-﻿namespace BackupBot.Core.Models
+﻿namespace BackupBot.Models
 {
     public class User
     {

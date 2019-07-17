@@ -5,7 +5,7 @@ using System.Text;
 using Discord;
 using Discord.WebSocket;
 
-namespace BackupBot.Core.Models
+namespace BackupBot.Domain.Models
 {
     [Serializable]
     public class Message : IMsg

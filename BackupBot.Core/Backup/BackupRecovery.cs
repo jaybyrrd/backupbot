@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace BackupBot.Core.Backup
+namespace BackupBot.Domain.Backup
 {
     public class BackupRecovery
     {

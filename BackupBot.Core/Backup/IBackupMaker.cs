@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using BackupBot.Domain.Models;
 using Discord.WebSocket;
 
-namespace BackupBot.Core.Backup
+namespace BackupBot.Domain.Backup
 {
     public interface IBackupHandler : IDisposable
     {

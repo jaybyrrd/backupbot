@@ -1,6 +1,6 @@
 ﻿using Discord.Commands;
 
-namespace BackupBot.Core.Modules
+namespace BackupBot.Domain.Modules
 {
     public class DefaultCommands : ModuleBase<SocketCommandContext>
     {

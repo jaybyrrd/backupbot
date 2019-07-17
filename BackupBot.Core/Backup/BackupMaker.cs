@@ -11,7 +11,7 @@ using Discord;
 using Discord.WebSocket;
 using Newtonsoft.Json;
 
-namespace BackupBot.Core.Backup
+namespace BackupBot.Domain.Backup
 {
     public class BackupHandler : IBackupHandler
     {

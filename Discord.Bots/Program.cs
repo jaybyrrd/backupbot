@@ -1,5 +1,5 @@
-﻿using System.Threading.Tasks;
-using BackupBot.Core;
+﻿using BackupBot;
+using System.Threading.Tasks;
 
 namespace Discord.Bots
 {
