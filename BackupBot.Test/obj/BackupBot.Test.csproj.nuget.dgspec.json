@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\julia\\Source\\Repos\\GarbageBot\\BackupBot.Test\\BackupBot.Test.csproj": {}
+    "C:\\Users\\julia\\Source\\Repos\\garbagebot\\BackupBot.Test\\BackupBot.Test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\julia\\Source\\Repos\\GarbageBot\\BackupBot.Core\\BackupBot.Core.csproj": {
+    "C:\\Users\\julia\\Source\\Repos\\garbagebot\\BackupBot.Core\\BackupBot.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\julia\\Source\\Repos\\GarbageBot\\BackupBot.Core\\BackupBot.Core.csproj",
+        "projectUniqueName": "C:\\Users\\julia\\Source\\Repos\\garbagebot\\BackupBot.Core\\BackupBot.Core.csproj",
         "projectName": "BackupBot.Core",
-        "projectPath": "C:\\Users\\julia\\Source\\Repos\\GarbageBot\\BackupBot.Core\\BackupBot.Core.csproj",
+        "projectPath": "C:\\Users\\julia\\Source\\Repos\\garbagebot\\BackupBot.Core\\BackupBot.Core.csproj",
         "packagesPath": "C:\\Users\\julia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\julia\\Source\\Repos\\GarbageBot\\BackupBot.Core\\obj\\",
+        "outputPath": "C:\\Users\\julia\\Source\\Repos\\garbagebot\\BackupBot.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -62,14 +62,14 @@
         }
       }
     },
-    "C:\\Users\\julia\\Source\\Repos\\GarbageBot\\BackupBot.Test\\BackupBot.Test.csproj": {
+    "C:\\Users\\julia\\Source\\Repos\\garbagebot\\BackupBot.Test\\BackupBot.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\julia\\Source\\Repos\\GarbageBot\\BackupBot.Test\\BackupBot.Test.csproj",
+        "projectUniqueName": "C:\\Users\\julia\\Source\\Repos\\garbagebot\\BackupBot.Test\\BackupBot.Test.csproj",
         "projectName": "BackupBot.Test",
-        "projectPath": "C:\\Users\\julia\\Source\\Repos\\GarbageBot\\BackupBot.Test\\BackupBot.Test.csproj",
+        "projectPath": "C:\\Users\\julia\\Source\\Repos\\garbagebot\\BackupBot.Test\\BackupBot.Test.csproj",
         "packagesPath": "C:\\Users\\julia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\julia\\Source\\Repos\\GarbageBot\\BackupBot.Test\\obj\\",
+        "outputPath": "C:\\Users\\julia\\Source\\Repos\\garbagebot\\BackupBot.Test\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -90,8 +90,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Users\\julia\\Source\\Repos\\GarbageBot\\BackupBot.Core\\BackupBot.Core.csproj": {
-                "projectPath": "C:\\Users\\julia\\Source\\Repos\\GarbageBot\\BackupBot.Core\\BackupBot.Core.csproj"
+              "C:\\Users\\julia\\Source\\Repos\\garbagebot\\BackupBot.Core\\BackupBot.Core.csproj": {
+                "projectPath": "C:\\Users\\julia\\Source\\Repos\\garbagebot\\BackupBot.Core\\BackupBot.Core.csproj"
               }
             }
           }

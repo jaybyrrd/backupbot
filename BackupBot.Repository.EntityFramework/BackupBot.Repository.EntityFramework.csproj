@@ -9,7 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BackupBot.Core\BackupBot.Core.csproj" />
+    <Folder Include="Migrations\" />
   </ItemGroup>
 
 </Project>
