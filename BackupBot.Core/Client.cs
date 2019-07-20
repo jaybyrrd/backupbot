@@ -16,7 +16,7 @@ namespace BackupBot.Core
 
         private readonly CommandService _commands;
         private readonly IServiceProvider _services;
-        private readonly IBackupHandler _backupHandler;
+        private readonly IBackupMaker _backupHandler;
 
         public Client()
         {
@@ -26,7 +26,7 @@ namespace BackupBot.Core
                 .AddSingleton(SocketClient)
                 .AddSingleton(_commands)
                 .BuildServiceProvider();
-            _backupHandler = new BackupHandler();
+            _backupHandler = new BackupMaker(new DirectoryInfo("D:/backup"));
         }
 
         public async Task RunAsync()

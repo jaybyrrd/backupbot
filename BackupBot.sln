@@ -9,9 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Discord.Bots", "Discord.Bot
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BackupBot.Core", "BackupBot.Core\BackupBot.Core.csproj", "{C10EFDA8-F13A-4014-8485-502DF68BAF39}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BackupBot.Repository.EntityFramework", "BackupBot.Repository.EntityFramework\BackupBot.Repository.EntityFramework.csproj", "{655BC498-F5FB-44C4-86EB-F40A2830D4AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BackupBot.Data", "BackupBot.Data\BackupBot.Data.csproj", "{7E5EF202-4288-49CE-9865-8D191E2DCB0D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackupBot.Services", "BackupBot.Services\BackupBot.Services.csproj", "{87172918-F3EB-4DE1-A894-D2952E1002DC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackupBot.Services", "BackupBot.Services\BackupBot.Services.csproj", "{E36607C8-3E51-4220-A561-3271BD53F598}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,14 +31,14 @@ Global
 		{C10EFDA8-F13A-4014-8485-502DF68BAF39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C10EFDA8-F13A-4014-8485-502DF68BAF39}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C10EFDA8-F13A-4014-8485-502DF68BAF39}.Release|Any CPU.Build.0 = Release|Any CPU
-		{655BC498-F5FB-44C4-86EB-F40A2830D4AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{655BC498-F5FB-44C4-86EB-F40A2830D4AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{655BC498-F5FB-44C4-86EB-F40A2830D4AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{655BC498-F5FB-44C4-86EB-F40A2830D4AE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{87172918-F3EB-4DE1-A894-D2952E1002DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{87172918-F3EB-4DE1-A894-D2952E1002DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{87172918-F3EB-4DE1-A894-D2952E1002DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{87172918-F3EB-4DE1-A894-D2952E1002DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E5EF202-4288-49CE-9865-8D191E2DCB0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E5EF202-4288-49CE-9865-8D191E2DCB0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E5EF202-4288-49CE-9865-8D191E2DCB0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E5EF202-4288-49CE-9865-8D191E2DCB0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E36607C8-3E51-4220-A561-3271BD53F598}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E36607C8-3E51-4220-A561-3271BD53F598}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E36607C8-3E51-4220-A561-3271BD53F598}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E36607C8-3E51-4220-A561-3271BD53F598}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

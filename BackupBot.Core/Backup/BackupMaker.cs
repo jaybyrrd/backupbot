@@ -13,14 +13,14 @@ using Newtonsoft.Json;
 
 namespace BackupBot.Core.Backup
 {
-    public class BackupHandler : IBackupHandler
+    public class BackupMaker : IBackupMaker
     {
         private FileStream _stream;
         private readonly IFormatter _formatter = new BinaryFormatter();
 
         private readonly DirectoryInfo _backupDir;
 
-        public BackupHandler(DirectoryInfo dir)
+        public BackupMaker(DirectoryInfo dir)
         {
             _backupDir = dir;
         }

@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Threading.Tasks;
-using BackupBot.Domain.Models;
 using Discord.WebSocket;
 
 namespace BackupBot.Core.Backup
 {
-    public interface IBackupHandler : IDisposable
+    public interface IBackupMaker : IDisposable
     {
         Task AddMessageAsync(SocketMessage msg);
     }
