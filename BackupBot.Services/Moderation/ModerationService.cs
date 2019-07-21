@@ -4,7 +4,7 @@ using System.Text;
 using System.Threading.Tasks;
 using BackupBot.Data.Entities;
 using BackupBot.Data.Repositories;
-using BackupBot.Services.Infrastructure;
+using BackupBot.Models;
 
 namespace BackupBot.Services.Moderation
 {
