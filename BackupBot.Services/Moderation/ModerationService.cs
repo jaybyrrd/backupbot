@@ -18,7 +18,7 @@ namespace BackupBot.Services.Moderation
         }
 
         public async Task AddNoteAsync(ulong userId, string description,
-            ulong createdBy, DateTime dateCreated, NoteTypes type)
+            ulong createdBy, DateTime dateCreated, Enums.NoteTypes type)
         {
             INote note = new Note(userId, description, createdBy, dateCreated, type);
             await _repository.AddNoteAsync(note);

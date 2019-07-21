@@ -27,7 +27,7 @@ namespace BackupBot.Models
         /// <summary>
         /// Describes the type of the note 
         /// </summary>
-        NoteTypes Type { get; }
+        Enums.NoteTypes Type { get; }
 
     }
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+using BackupBot.Models;
 using Discord;
 using Discord.Commands;
 
@@ -14,7 +15,7 @@ namespace BackupBot.Core.Modules
             var baseResult = await base.ReadAsync(context, input, services);
 
             if (baseResult.IsSuccess)
-                return TypeReaderResult.FromSuccess(UserEntity.FromIUser(baseResult.BestMatch as IUser));
+                return TypeReaderResult.FromSuccess(User.FromIUser(baseResult.BestMatch as IUser));
 
             if (!ulong.TryParse(input, out var uid) && !MentionUtils.TryParseUser(input, out uid))
                 return TypeReaderResult.FromError(CommandError.ParseFailed, "Could not find user / parse user ID");
@@ -22,7 +23,7 @@ namespace BackupBot.Core.Modules
             if (!IsUserIdValid(uid))
                 return TypeReaderResult.FromError(CommandError.ParseFailed, "UserID is invalid.");
                     
-            return TypeReaderResult.FromSuccess(new UserEntity(uid));
+            return TypeReaderResult.FromSuccess(new User(uid));
 
         }
 

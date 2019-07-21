@@ -8,6 +8,6 @@ namespace BackupBot.Services.Moderation
     public interface IModerationService
     {
         Task AddNoteAsync(ulong userId, string description,
-            ulong createdBy, DateTime dateCreated, NoteTypes type);
+            ulong createdBy, DateTime dateCreated, Enums.NoteTypes type);
     }
 }

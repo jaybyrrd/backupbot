@@ -16,7 +16,7 @@ namespace BackupBot.Data.Entities
 
         public DateTime Date { get; set;  }
 
-        public NoteTypes NoteType { get; set; }
+        public Enums.NoteTypes NoteType { get; set; }
 
     }
 }
