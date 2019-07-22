@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BackupBot.Core\BackupBot.Core.csproj" />
     <ProjectReference Include="..\BackupBot.Data\BackupBot.Data.csproj" />
   </ItemGroup>
 

@@ -9,7 +9,10 @@ namespace BackupBot.Models
     {
         public ulong Id { get; }
 
-        public User(ulong id) { Id = id; }
+        public User(ulong id)
+        {
+            Id = id;
+        }
 
         public static User FromIUser(IUser user) => new User(user.Id);
     }

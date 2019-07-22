@@ -6,12 +6,9 @@ namespace BackupBot.Data
     public class GcContext : DbContext
     {
 
-        public GcContext()
-        {
-            
-        }
+        public GcContext() { }
 
-        public DbSet<NoteEntity> NoteEntities { get; set; }
+        public virtual DbSet<NoteEntity> NoteEntities { get; set; }
 
     }
 }
