@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BackupBot.Models;
+using System;
 using System.Threading.Tasks;
 
 namespace BackupBot.Services

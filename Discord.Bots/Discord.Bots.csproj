@@ -14,6 +14,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BackupBot.Core\BackupBot.Core.csproj" />
+    <ProjectReference Include="..\BackupBot.Services.EntityFramework\BackupBot.Services.EntityFramework.csproj" />
+    <ProjectReference Include="..\BackupBot.Services\BackupBot.Services.csproj" />
   </ItemGroup>
 
 </Project>

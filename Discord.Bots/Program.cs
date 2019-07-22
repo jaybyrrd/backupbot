@@ -1,11 +1,19 @@
-﻿using System.Threading.Tasks;
-using BackupBot.Core;
+﻿using BackupBot.Core;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Discord.Bots
 {
     class Program
     {
-        public static readonly Client Client = new Client();
-        static async Task Main(string[] args) => await Client.RunAsync();
+        public static void Main()
+        {
+            ServiceCollection serviceDescriptors = new ServiceCollection();
+
+            serviceDescriptors.AddDbContext<BackupBot.Services.EntityFramework.GcContext>();
+            Client client = new Client(serviceDescriptors);
+
+            client.RunAsync().GetAwaiter().GetResult();
+        }
+
     }
 }

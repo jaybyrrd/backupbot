@@ -1,4 +1,5 @@
-﻿using Discord;
+﻿using BackupBot.Core.Backup;
+using Discord;
 using Discord.Commands;
 using Discord.WebSocket;
 using Microsoft.Extensions.DependencyInjection;
@@ -6,7 +7,6 @@ using System;
 using System.IO;
 using System.Reflection;
 using System.Threading.Tasks;
-using BackupBot.Core.Backup;
 
 namespace BackupBot.Core
 {
@@ -18,11 +18,11 @@ namespace BackupBot.Core
         private readonly IServiceProvider _services;
         private readonly IBackupMaker _backupHandler;
 
-        public Client()
+        public Client(ServiceCollection serviceDescriptors)
         {
             SocketClient = new DiscordSocketClient();
             _commands = new CommandService();
-            _services = new ServiceCollection()
+            _services = serviceDescriptors
                 .AddSingleton(SocketClient)
                 .AddSingleton(_commands)
                 .BuildServiceProvider();

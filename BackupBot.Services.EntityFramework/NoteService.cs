@@ -17,5 +17,10 @@ namespace BackupBot.Services.EntityFramework
         {
             throw new NotImplementedException();
         }
+
+        public Task AddNoteAsync(ulong userId, string description, ulong createdBy, DateTime dateCreated, NoteTypes type)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

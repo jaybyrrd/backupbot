@@ -9,9 +9,4 @@
     <PackageReference Include="Discord.Net" Version="2.1.1" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\BackupBot.Models\BackupBot.Models.csproj" />
-    <ProjectReference Include="..\BackupBot.Services\BackupBot.Services.csproj" />
-  </ItemGroup>
-
 </Project>

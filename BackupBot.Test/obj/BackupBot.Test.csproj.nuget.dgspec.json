@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\julia\\Source\\Repos\\garbagebot\\BackupBot.Test\\BackupBot.Test.csproj": {}
+    "E:\\_Projects\\_Git\\caveofjulian\\backupbot\\BackupBot.Test\\BackupBot.Test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\julia\\Source\\Repos\\garbagebot\\BackupBot.Core\\BackupBot.Core.csproj": {
+    "E:\\_Projects\\_Git\\caveofjulian\\backupbot\\BackupBot.Core\\BackupBot.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\julia\\Source\\Repos\\garbagebot\\BackupBot.Core\\BackupBot.Core.csproj",
+        "projectUniqueName": "E:\\_Projects\\_Git\\caveofjulian\\backupbot\\BackupBot.Core\\BackupBot.Core.csproj",
         "projectName": "BackupBot.Core",
-        "projectPath": "C:\\Users\\julia\\Source\\Repos\\garbagebot\\BackupBot.Core\\BackupBot.Core.csproj",
-        "packagesPath": "C:\\Users\\julia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\julia\\Source\\Repos\\garbagebot\\BackupBot.Core\\obj\\",
+        "projectPath": "E:\\_Projects\\_Git\\caveofjulian\\backupbot\\BackupBot.Core\\BackupBot.Core.csproj",
+        "packagesPath": "C:\\Users\\dynam\\.nuget\\packages\\",
+        "outputPath": "E:\\_Projects\\_Git\\caveofjulian\\backupbot\\BackupBot.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\julia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dynam\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -26,135 +26,14 @@
           "netcoreapp2.2"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netcoreapp2.2": {
-            "projectReferences": {
-              "C:\\Users\\julia\\Source\\Repos\\garbagebot\\BackupBot.Models\\BackupBot.Models.csproj": {
-                "projectPath": "C:\\Users\\julia\\Source\\Repos\\garbagebot\\BackupBot.Models\\BackupBot.Models.csproj"
-              },
-              "C:\\Users\\julia\\Source\\Repos\\garbagebot\\BackupBot.Services\\BackupBot.Services.csproj": {
-                "projectPath": "C:\\Users\\julia\\Source\\Repos\\garbagebot\\BackupBot.Services\\BackupBot.Services.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netcoreapp2.2": {
-          "dependencies": {
-            "Discord.Net": {
-              "target": "Package",
-              "version": "[2.1.1, )"
-            },
-            "Microsoft.NETCore.App": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.2.0, )",
-              "autoReferenced": true
-            }
-          },
-          "imports": [
-            "net461"
-          ],
-          "assetTargetFallback": true,
-          "warn": true
-        }
-      }
-    },
-    "C:\\Users\\julia\\Source\\Repos\\garbagebot\\BackupBot.Data\\BackupBot.Data.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\julia\\Source\\Repos\\garbagebot\\BackupBot.Data\\BackupBot.Data.csproj",
-        "projectName": "BackupBot.Data",
-        "projectPath": "C:\\Users\\julia\\Source\\Repos\\garbagebot\\BackupBot.Data\\BackupBot.Data.csproj",
-        "packagesPath": "C:\\Users\\julia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\julia\\Source\\Repos\\garbagebot\\BackupBot.Data\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\julia\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netcoreapp2.2"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netcoreapp2.2": {
-            "projectReferences": {
-              "C:\\Users\\julia\\Source\\Repos\\garbagebot\\BackupBot.Models\\BackupBot.Models.csproj": {
-                "projectPath": "C:\\Users\\julia\\Source\\Repos\\garbagebot\\BackupBot.Models\\BackupBot.Models.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netcoreapp2.2": {
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[2.2.6, )"
-            },
-            "Microsoft.NETCore.App": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.2.0, )",
-              "autoReferenced": true
-            }
-          },
-          "imports": [
-            "net461"
-          ],
-          "assetTargetFallback": true,
-          "warn": true
-        }
-      }
-    },
-    "C:\\Users\\julia\\Source\\Repos\\garbagebot\\BackupBot.Models\\BackupBot.Models.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\julia\\Source\\Repos\\garbagebot\\BackupBot.Models\\BackupBot.Models.csproj",
-        "projectName": "BackupBot.Models",
-        "projectPath": "C:\\Users\\julia\\Source\\Repos\\garbagebot\\BackupBot.Models\\BackupBot.Models.csproj",
-        "packagesPath": "C:\\Users\\julia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\julia\\Source\\Repos\\garbagebot\\BackupBot.Models\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\julia\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netcoreapp2.2"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "E:\\_Projects\\Dynamensions\\MVVM\\Packages": {},
+          "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore-tooling/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/aspnet-entityframeworkcore/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/aspnet-extensions/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/dotnet-windowsdesktop/index.json": {},
+          "https://www.nuget.org/api/v2/": {}
         },
         "frameworks": {
           "netcoreapp2.2": {
@@ -189,79 +68,21 @@
         }
       }
     },
-    "C:\\Users\\julia\\Source\\Repos\\garbagebot\\BackupBot.Services\\BackupBot.Services.csproj": {
+    "E:\\_Projects\\_Git\\caveofjulian\\backupbot\\BackupBot.Test\\BackupBot.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\julia\\Source\\Repos\\garbagebot\\BackupBot.Services\\BackupBot.Services.csproj",
-        "projectName": "BackupBot.Services",
-        "projectPath": "C:\\Users\\julia\\Source\\Repos\\garbagebot\\BackupBot.Services\\BackupBot.Services.csproj",
-        "packagesPath": "C:\\Users\\julia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\julia\\Source\\Repos\\garbagebot\\BackupBot.Services\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\julia\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netcoreapp2.2"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netcoreapp2.2": {
-            "projectReferences": {
-              "C:\\Users\\julia\\Source\\Repos\\garbagebot\\BackupBot.Data\\BackupBot.Data.csproj": {
-                "projectPath": "C:\\Users\\julia\\Source\\Repos\\garbagebot\\BackupBot.Data\\BackupBot.Data.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netcoreapp2.2": {
-          "dependencies": {
-            "Microsoft.NETCore.App": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.2.0, )",
-              "autoReferenced": true
-            }
-          },
-          "imports": [
-            "net461"
-          ],
-          "assetTargetFallback": true,
-          "warn": true
-        }
-      }
-    },
-    "C:\\Users\\julia\\Source\\Repos\\garbagebot\\BackupBot.Test\\BackupBot.Test.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\julia\\Source\\Repos\\garbagebot\\BackupBot.Test\\BackupBot.Test.csproj",
+        "projectUniqueName": "E:\\_Projects\\_Git\\caveofjulian\\backupbot\\BackupBot.Test\\BackupBot.Test.csproj",
         "projectName": "BackupBot.Test",
-        "projectPath": "C:\\Users\\julia\\Source\\Repos\\garbagebot\\BackupBot.Test\\BackupBot.Test.csproj",
-        "packagesPath": "C:\\Users\\julia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\julia\\Source\\Repos\\garbagebot\\BackupBot.Test\\obj\\",
+        "projectPath": "E:\\_Projects\\_Git\\caveofjulian\\backupbot\\BackupBot.Test\\BackupBot.Test.csproj",
+        "packagesPath": "C:\\Users\\dynam\\.nuget\\packages\\",
+        "outputPath": "E:\\_Projects\\_Git\\caveofjulian\\backupbot\\BackupBot.Test\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\julia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dynam\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -269,14 +90,20 @@
           "netcoreapp2.2"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "E:\\_Projects\\Dynamensions\\MVVM\\Packages": {},
+          "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore-tooling/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/aspnet-entityframeworkcore/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/aspnet-extensions/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/dotnet-windowsdesktop/index.json": {},
+          "https://www.nuget.org/api/v2/": {}
         },
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Users\\julia\\Source\\Repos\\garbagebot\\BackupBot.Core\\BackupBot.Core.csproj": {
-                "projectPath": "C:\\Users\\julia\\Source\\Repos\\garbagebot\\BackupBot.Core\\BackupBot.Core.csproj"
+              "E:\\_Projects\\_Git\\caveofjulian\\backupbot\\BackupBot.Core\\BackupBot.Core.csproj": {
+                "projectPath": "E:\\_Projects\\_Git\\caveofjulian\\backupbot\\BackupBot.Core\\BackupBot.Core.csproj"
               }
             }
           }

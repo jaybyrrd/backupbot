@@ -9,11 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Discord.Bots", "Discord.Bot
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BackupBot.Core", "BackupBot.Core\BackupBot.Core.csproj", "{C10EFDA8-F13A-4014-8485-502DF68BAF39}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BackupBot.Data", "BackupBot.Data\BackupBot.Data.csproj", "{7E5EF202-4288-49CE-9865-8D191E2DCB0D}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BackupBot.Services", "BackupBot.Services\BackupBot.Services.csproj", "{E36607C8-3E51-4220-A561-3271BD53F598}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackupBot.Models", "BackupBot.Models\BackupBot.Models.csproj", "{8103ACF1-A65A-4F26-B6E7-3BBE5BE3DA47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BackupBot.Services.EntityFramework", "BackupBot.Services.EntityFramework\BackupBot.Services.EntityFramework.csproj", "{D5CF653D-AC53-432E-BE5E-7E719DF6E722}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,18 +31,14 @@ Global
 		{C10EFDA8-F13A-4014-8485-502DF68BAF39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C10EFDA8-F13A-4014-8485-502DF68BAF39}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C10EFDA8-F13A-4014-8485-502DF68BAF39}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7E5EF202-4288-49CE-9865-8D191E2DCB0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7E5EF202-4288-49CE-9865-8D191E2DCB0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7E5EF202-4288-49CE-9865-8D191E2DCB0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7E5EF202-4288-49CE-9865-8D191E2DCB0D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E36607C8-3E51-4220-A561-3271BD53F598}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E36607C8-3E51-4220-A561-3271BD53F598}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E36607C8-3E51-4220-A561-3271BD53F598}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E36607C8-3E51-4220-A561-3271BD53F598}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8103ACF1-A65A-4F26-B6E7-3BBE5BE3DA47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8103ACF1-A65A-4F26-B6E7-3BBE5BE3DA47}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8103ACF1-A65A-4F26-B6E7-3BBE5BE3DA47}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8103ACF1-A65A-4F26-B6E7-3BBE5BE3DA47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5CF653D-AC53-432E-BE5E-7E719DF6E722}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5CF653D-AC53-432E-BE5E-7E719DF6E722}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5CF653D-AC53-432E-BE5E-7E719DF6E722}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5CF653D-AC53-432E-BE5E-7E719DF6E722}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
