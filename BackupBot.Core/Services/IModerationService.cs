@@ -24,10 +24,29 @@ namespace BackupBot.Core.Services
         /// <summary>
         /// Get all notes of user.
         /// </summary>
+        /// <param name="user"></param>      
+        /// <returns></returns>
+        IList<INote> GetNotes(User user);
+
+        /// <summary>
+        /// Returns whether or not user is admin.
+        /// </summary>
         /// <param name="user"></param>
         /// <returns></returns>
-        Task<IList<INote>> GetNotesAsync(User user);
+        bool IsUserAdmin(ulong user);
 
-        
+        /// <summary>
+        /// Returns whether or not user is moderator.
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns></returns>
+        bool IsUserModerator(ulong user);
+
+        /// <summary>
+        /// Returns whether or not user is pog.
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns></returns>
+        bool IsUserPog(ulong user);
     }
 }

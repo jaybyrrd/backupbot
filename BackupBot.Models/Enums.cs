@@ -7,9 +7,10 @@ namespace BackupBot.Models
         [Flags]
         public enum UserRights
         {
-            Mvp = 0,
-            Mod = 1,
-            Admin = 2
+            None = 0,
+            Pog = 1,
+            Mod = 2,
+            Admin = 4
         }
 
         public enum NoteTypes

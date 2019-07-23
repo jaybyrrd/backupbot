@@ -24,7 +24,6 @@ namespace BackupBot.Core.Modules
                 return TypeReaderResult.FromError(CommandError.ParseFailed, "UserID is invalid.");
                     
             return TypeReaderResult.FromSuccess(new User(uid));
-
         }
 
         private static bool IsUserIdValid(ulong id)
