@@ -7,10 +7,13 @@ using BackupBot.Core.Services;
 using BackupBot.Models;
 using Discord;
 using Discord.Commands;
+using Discord.WebSocket;
 
 namespace BackupBot.Core.Modules
 {
-
+    /// <summary>
+    /// ToDo: have internal admin rights and check if userToKick is admin in our system, also check if an admin is being tried to be punished
+    /// </summary>
     [Name("Moderation")]
     [Summary("Commands for moderating activities.")]
     public class ModerationCommands : ModuleBase
@@ -29,32 +32,31 @@ namespace BackupBot.Core.Modules
         [Summary("Add a note to member's record of bad behaviour (RBB).")]
         public async Task AddNote(User user, [Remainder] string description)
         {
-            const int REQUIRED_ARGUMENT_COUNT = 3;
+            if (!_service.IsUserModerator(Context.User.Id))
+            {
+                await SendUserNotEnoughRights();
+                return;
+            }
+
+            const int REQUIRED_ARGUMENT_COUNT = 2;
             string[] arguments = description.Split(SPACE);
 
             if (arguments.Length != REQUIRED_ARGUMENT_COUNT)
             {
-                await ReplyAsync("Command is not valid. Syntax: Note [user] [type] [description].");
+                await ReplyAsync("Command is not valid. Syntax: Note [userToKick] [type] [description].");
             }
 
-            int userId;
             Enums.NoteTypes type;
+            bool isSuccessful = Enum.TryParse<Enums.NoteTypes>(arguments[0], out type);
 
-            try
-            {
-                userId = int.Parse(arguments[0]);
-                type = (Enums.NoteTypes) Enum.Parse(typeof(Enums.NoteTypes), arguments[1], true);
-            }
-            catch
-            {
+            if(isSuccessful)
                 await ReplyAsync("UserId or NoteType is invalid. Or both.");
-                return;
-            }
+            
 
-            INote note = new Note(user.Id, arguments[2], Context.User.Id, DateTime.Now , type);
+            INote note = new Note(user.Id, arguments[1], Context.User.Id, DateTime.Now , type);
             await _service.AddNoteAsync(note);
 
-            await ReplyAsync("Note has been successfully added to user's history.");
+            await ReplyAsync("Note has been successfully added to userToKick's history.");
         }
 
         [Command("RemoveNote")]
@@ -62,15 +64,21 @@ namespace BackupBot.Core.Modules
         [Summary(("Remove a note from member's record of bad behaviour (RBB)."))]
         public async Task RemoveNote([Remainder] int id)
         {
+            if (!_service.IsUserModerator(Context.User.Id))
+            {
+                await SendUserNotEnoughRights();
+                return;
+            }
+
             bool isNoteDeleted = await _service.DeleteNoteAsync(id);
 
             if (isNoteDeleted)
             {
-                await ReplyAsync($"Note {id} has been removed from user's history.");
+                await ReplyAsync($"Note {id} has been removed from userToKick's history.");
             }
             else
             {
-                await ReplyAsync($"Note {id} could not be removed from user's history. ");
+                await ReplyAsync($"Note {id} could not be removed from userToKick's history. ");
             }
         }
 
@@ -79,7 +87,13 @@ namespace BackupBot.Core.Modules
         [Summary("Show all notes in member's record of bad behaviour (RBB).")]
         public async Task GetNotes(User user)
         {
-            IList<INote> notes = await _service.GetNotesAsync(user);
+            if (!_service.IsUserModerator(Context.User.Id))
+            {
+                await SendUserNotEnoughRights();
+                return;
+            }
+
+            IList<INote> notes = _service.GetNotes(user);
 
             if (notes == null || notes.Count == 0)
             {
@@ -89,24 +103,64 @@ namespace BackupBot.Core.Modules
             {
                 // ToDo: send embedded messages with all notes of users
             }
-
         }
 
         [Command("Ban")]
         [Summary("Ban member from discord server.")]
         public async Task BanMember(User user, [Remainder] string reason)
         {
-            if (await Context.Guild.GetUserAsync(user.Id) == null)
+            if (!_service.IsUserModerator(Context.User.Id))
             {
-                await ReplyAsync("User not valid.");
+                await SendUserNotEnoughRights();
+                return;
+            }
+
+            if (!await UserExistsAsync(user))
+            {
+                await SendUserNotValid();
+                return;
             }
 
             await Context.Guild.AddBanAsync(user.Id, 0, reason);
         }
 
-        private async Task SendParsingErrorMessageAsync()
+        [Command("Kick")]
+        [Summary("Kick a member from the discord server.")]
+        public async Task KickMember(User userToKick, [Remainder] string reason)
         {
-            await ReplyAsync("Command is invalid: parsing has failed.");
+            if (!_service.IsUserModerator(Context.User.Id))
+            {
+                await SendUserNotEnoughRights();
+            }
+            else if (!await UserExistsAsync(userToKick))
+            {
+                await SendUserNotValid();
+            }
+            else if()
+            {
+                var user =  as SocketGuildUser;
+
+                await user.KickAsync(reason);
+                await ReplyAsync("User's ass has successfully been kicked.");
+            }
+        }
+
+        private async Task<bool> UserExistsAsync(User user)
+        {
+            if (!_service.IsUserModerator(Context.User.Id))
+                await SendUserNotEnoughRights();
+
+            return await Context.Guild.GetUserAsync(user.Id) != null;
+        }
+
+        private async Task SendUserNotEnoughRights()
+        {
+            await SendUserNotValid();
+        }
+
+        private async Task SendUserNotValid()
+        {
+            await ReplyAsync("User is not valid.");
         }
     }
 }

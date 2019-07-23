@@ -6,9 +6,9 @@ namespace BackupBot.Models
     public class Note : INote 
     {
 
-        public Note(ulong id, string description, ulong createdBy, DateTime date, NoteTypes type)
+        public Note(ulong userId, string description, ulong createdBy, DateTime date, NoteTypes type)
         {
-            UserId = id;
+            UserId = userId;
             Description = description;
             CreatedBy = createdBy;
             Date = date;
