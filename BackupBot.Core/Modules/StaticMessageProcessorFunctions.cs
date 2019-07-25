@@ -11,7 +11,7 @@ namespace BackupBot.Core.Modules
     {
         public static async Task DabProcessorAsync(SocketMessage arg)
         {
-            if (arg.Content.ToLower().Contains("dab"))
+            if (!arg.Author.IsBot && arg.Content.ToLower().Contains("dab"))
             {
                 int count = Regex.Matches(arg.Content.ToLower(), "dab").Count;
                 await arg.Channel.SendMessageAsync(new string('x', Math.Min(count, 10)).Replace("x", ":dab:"));
