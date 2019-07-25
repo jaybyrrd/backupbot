@@ -14,7 +14,7 @@ namespace BackupBot.Core.Modules
             if (arg.Content.ToLower().Contains("dab"))
             {
                 int count = Regex.Matches(arg.Content.ToLower(), "dab").Count;
-                await arg.Channel.SendMessageAsync(new string('x', count).Replace("x", ":dab:"));
+                await arg.Channel.SendMessageAsync(new string('x', Math.Min(count, 10)).Replace("x", ":dab:"));
             }
         }
     }
